@@ -12,11 +12,15 @@
 <body>
     <div class="jumbotron">
         <h1 class="display-1">Check your weather, today!</h1>
+        <p id="currentDay" class="lead"></p>
         <p class="lead">Type your city to see how your day will be:</p>
+            <form>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="location" class="location-control" id="location" placeholder="Enter location">
+                </div>
+            </form>
     </div>
-        <div class="date">
-            Date :  
-        </div>
         <div class="Icon image">
             Icon Image
         </div>
@@ -32,8 +36,9 @@
         <div class="UV Index">
             UV
         </div>
-
-    <script src="script.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
